@@ -9,7 +9,7 @@ systemctl enable --now docker.service
 systemctl enable --now firewalld.service
 systemctl enable --now yum-cron.service
 
-uptrack-upgrade -y --all
+#uptrack-upgrade -y --all
 
 # Install the proxyt transparent proxy client
 wget http://kernel.us.oracle.com/~jhaxby/proxyt/repo/7/x86_64/proxyt-4.1.1-1.el7.x86_64.rpm
