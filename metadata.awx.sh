@@ -28,6 +28,8 @@ done
 
 systemctl restart firewalld.service
 
+# Update pip or the cryptography pakckage may fail to install
+/usr/bin/pip3 install --upgrade pip
 /usr/bin/pip3 install --user --upgrade --disable-pip-version-check ansible
 
 if [ ! -d ${GIT_CHECKOUT} ]
